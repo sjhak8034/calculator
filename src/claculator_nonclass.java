@@ -1,15 +1,25 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class claculator_nonclass {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner sc = new Scanner(System.in);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        int a = -1;
+        int b = -1;
+        do {
+            System.out.print("첫 번째 숫자를 입력하세요: ");
+            a = sc.nextInt();
+        }while(a<0);
+        do{
+            System.out.print("두 번째 숫자를 입력하세요: ");
+            b = sc.nextInt();
+        }while(b<0);
+
+
+
+        // 두개의 양의 정수를 받아옴
+
     }
 }
