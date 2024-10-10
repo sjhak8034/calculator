@@ -18,7 +18,38 @@ public class App {
             System.out.print("사칙연산 기호를 입력하세요: ");
             char operator = sc.next().charAt(0);
 
-            result = calc.calculate(num1, num2, operator);
+            switch (operator) {
+                case '+':
+                    //calc = new Calculator(new AddOperation());
+                    calc.Setter(new AddOperation());
+                    break;
+                case '-':
+//                    calc = new Calculator(new SubstractOperation());
+                    calc.Setter(new SubstractOperation());
+                    break;
+                case '*':
+//                    calc = new Calculator(new MultiplyOperation());
+                   calc.Setter(new MultiplyOperation());
+                    break;
+                case '/':
+                    if (num2 == 0) {
+                        System.out.println("분모에 0이 입력될 수 없습니다.");
+                        break;
+                    } else {
+//                        calc = new Calculator(new DivideOperation());
+                       calc.Setter(new DivideOperation());
+                    }
+                    break;
+                default:
+                    System.out.println(num1%num2);
+                    break;
+            }
+
+            result = calc.calculate(num1, num2);
+
+
+
+
             System.out.println(result);
 
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
