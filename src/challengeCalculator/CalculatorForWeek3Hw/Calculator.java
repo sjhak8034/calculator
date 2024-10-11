@@ -1,23 +1,18 @@
-package CalculatorForWeek3Hw;
+package challengeCalculator.CalculatorForWeek3Hw;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Calculator {
+public class Calculator <t extends Number, u extends Number> {
     private List<Double> memory = new ArrayList<>();
-    //    AddOperation addOperation = new AddOperation();
-//    DivideOperation divideOperation = new DivideOperation();
-//    SubstractOperation substractOperation = new SubstractOperation();
-//    MultiplyOperation multiplyOperation = new MultiplyOperation();
+
     private AbstractOperation operation;
 
     public void Setter(AbstractOperation operation) {
         this.operation = operation;
     }
 
-    //    public Calculator(AbstractOperation operation) {
-//        this.operation = operation;
-//    }
+
     public Calculator() {
 
     }
@@ -31,7 +26,7 @@ public class Calculator {
         this.memory.set(index, value);
     }
 
-    public double calculate(int a, int b) {
+    public double calculate(t a, u b) {
         double result;
         result = operation.operate(a, b);
 

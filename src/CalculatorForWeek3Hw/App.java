@@ -29,7 +29,7 @@ public class App {
                     break;
                 case '*':
 //                    calc = new Calculator(new MultiplyOperation());
-                   calc.Setter(new MultiplyOperation());
+                    calc.Setter(new MultiplyOperation());
                     break;
                 case '/':
                     if (num2 == 0) {
@@ -37,17 +37,15 @@ public class App {
                         break;
                     } else {
 //                        calc = new Calculator(new DivideOperation());
-                       calc.Setter(new DivideOperation());
+                        calc.Setter(new DivideOperation());
                     }
                     break;
                 default:
-                    System.out.println(num1%num2);
+                    System.out.println(num1 % num2);
                     break;
             }
 
             result = calc.calculate(num1, num2);
-
-
 
 
             System.out.println(result);
