@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class getInput <t extends Number> {
 
-    public Object get (String input) {
+    public Number get (String input) {
         try {
             BigDecimal number = new BigDecimal(input);
             // 입력 값이 정수인지 소수인지 확인

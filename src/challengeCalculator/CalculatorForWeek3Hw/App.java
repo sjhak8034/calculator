@@ -15,13 +15,13 @@ public class App {
             System.out.print("첫 번째 숫자를 입력하세요:");
 
             String tempNum1 = sc.nextLine();
-            Object num1 = getInput.get(tempNum1);
+            Number num1 = getInput.get(tempNum1);
 
 
             System.out.print("두 번째 숫자를 입력하세요:");
 
             String tempNum2 = sc.nextLine();
-            Object num2 = getInput.get(tempNum2);
+            Number num2 = getInput.get(tempNum2);
 
 
             System.out.print("사칙연산 기호를 입력하세요: ");
@@ -30,45 +30,21 @@ public class App {
             switch (operator) {
                 case '+':
 
-                    calc.Setter(new AddOperation());
+                    calc.setter(new AddOperation());
 
-                    if (num1 instanceof Double && num2 instanceof Double) {
-                        result = calc.calculate(((Double) num1).doubleValue(), ((Double) num2).doubleValue());
-                    } else if (num1 instanceof Double && num2 instanceof Integer) {
-                        result = calc.calculate(((Double) num1).doubleValue(), ((Integer) num2).intValue());
-                    } else if (num1 instanceof Integer && num2 instanceof Double) {
-                        result = calc.calculate(((Integer) num1).intValue(), ((Double) num2).doubleValue());
-                    } else if (num1 instanceof Integer && num2 instanceof Integer) {
-                        result = calc.calculate(((Integer) num1).intValue(), ((Integer) num2).intValue());
-                    }
+                    result = calc.calculate(num1, num2);
                     System.out.println(result);
                     break;
                 case '-':
 
-                    calc.Setter(new SubtractOperation());
-                    if (num1 instanceof Double && num2 instanceof Double) {
-                        result = calc.calculate(((Double) num1).doubleValue(), ((Double) num2).doubleValue());
-                    } else if (num1 instanceof Double && num2 instanceof Integer) {
-                        result = calc.calculate(((Double) num1).doubleValue(), ((Integer) num2).intValue());
-                    } else if (num1 instanceof Integer && num2 instanceof Double) {
-                        result = calc.calculate(((Integer) num1).intValue(), ((Double) num2).doubleValue());
-                    } else if (num1 instanceof Integer && num2 instanceof Integer) {
-                        result = calc.calculate(((Integer) num1).intValue(), ((Integer) num2).intValue());
-                    }
+                    calc.setter(new SubtractOperation());
+                    result = calc.calculate(num1, num2);
                     System.out.println(result);
                     break;
                 case '*':
 
-                    calc.Setter(new MultiplyOperation());
-                    if (num1 instanceof Double && num2 instanceof Double) {
-                        result = calc.calculate(((Double) num1).doubleValue(), ((Double) num2).doubleValue());
-                    } else if (num1 instanceof Double && num2 instanceof Integer) {
-                        result = calc.calculate(((Double) num1).doubleValue(), ((Integer) num2).intValue());
-                    } else if (num1 instanceof Integer && num2 instanceof Double) {
-                        result = calc.calculate(((Integer) num1).intValue(), ((Double) num2).doubleValue());
-                    } else if (num1 instanceof Integer && num2 instanceof Integer) {
-                        result = calc.calculate(((Integer) num1).intValue(), ((Integer) num2).intValue());
-                    }
+                    calc.setter(new MultiplyOperation());
+                    result = calc.calculate(num1, num2);
                     System.out.println(result);
                     break;
                 case '/':
@@ -85,16 +61,8 @@ public class App {
                     }
 
 
-                    calc.Setter(new DivideOperation());
-                    if (num1 instanceof Double && num2 instanceof Double) {
-                        result = calc.calculate(((Double) num1).doubleValue(), ((Double) num2).doubleValue());
-                    } else if (num1 instanceof Double && num2 instanceof Integer) {
-                        result = calc.calculate(((Double) num1).doubleValue(), ((Integer) num2).intValue());
-                    } else if (num1 instanceof Integer && num2 instanceof Double) {
-                        result = calc.calculate(((Integer) num1).intValue(), ((Double) num2).doubleValue());
-                    } else if (num1 instanceof Integer && num2 instanceof Integer) {
-                        result = calc.calculate(((Integer) num1).intValue(), ((Integer) num2).intValue());
-                    }
+                    calc.setter(new DivideOperation());
+                    result = calc.calculate(num1, num2);
                     System.out.println(result);
                     break;
             }

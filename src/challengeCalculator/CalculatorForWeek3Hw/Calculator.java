@@ -8,7 +8,7 @@ public class Calculator <t extends Number, u extends Number> {
 
     private AbstractOperation operation;
 
-    public void Setter(AbstractOperation operation) {
+    public void setter(AbstractOperation operation) {
         this.operation = operation;
     }
 
@@ -18,11 +18,11 @@ public class Calculator <t extends Number, u extends Number> {
     }
 
 
-    public List<Double> getter() {
+     public List<Double> getter() {
         return this.memory;
     }
 
-    public void Setter(int index, double value) {
+    public void setter(int index, double value) {
         this.memory.set(index, value);
     }
 
