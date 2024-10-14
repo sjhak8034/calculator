@@ -1,4 +1,4 @@
-package challengeCalculator;
+package CalculatorWithNewFunction;
 
 public class Commander {
 

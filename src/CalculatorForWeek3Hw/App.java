@@ -25,7 +25,7 @@ public class App {
                     break;
                 case '-':
 //                    calc = new Calculator(new SubstractOperation());
-                    calc.Setter(new SubstractOperation());
+                    calc.Setter(new SubtractOperation());
                     break;
                 case '*':
 //                    calc = new Calculator(new MultiplyOperation());

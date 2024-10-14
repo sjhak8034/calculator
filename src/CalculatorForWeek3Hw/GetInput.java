@@ -1,4 +1,4 @@
-package challengeCalculator.CalculatorForWeek3Hw;
+package CalculatorForWeek3Hw;
 
 import java.math.BigDecimal;
 

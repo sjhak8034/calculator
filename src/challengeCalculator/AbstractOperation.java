@@ -1,4 +1,4 @@
-package challengeCalculator.CalculatorForWeek3Hw;
+package challengeCalculator;
 
 public abstract class AbstractOperation <t extends Number, u extends Number> extends Calculator {
 

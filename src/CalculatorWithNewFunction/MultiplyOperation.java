@@ -1,4 +1,4 @@
-package challengeCalculator;
+package CalculatorWithNewFunction;
 
 public class MultiplyOperation<t extends Number, u extends Number> extends AbstractOperation<t,u> {
     @Override

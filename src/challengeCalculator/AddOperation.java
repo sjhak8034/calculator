@@ -1,4 +1,4 @@
-package challengeCalculator.CalculatorForWeek3Hw;
+package challengeCalculator;
 
 public class AddOperation<t extends Number, u extends Number> extends AbstractOperation<t,u> {
     @Override

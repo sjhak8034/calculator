@@ -1,4 +1,4 @@
-package challengeCalculator.CalculatorForWeek3Hw;
+package challengeCalculator;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class App {
         /* Calculator 인스턴스 생성 */
         Calculator calc = new Calculator();
         Scanner sc = new Scanner(System.in);
-        getInput getInput = new getInput();
+        GetInput getInput = new GetInput();
         double result = 0;
         /* 반복문 시작 */
         while (true) {
