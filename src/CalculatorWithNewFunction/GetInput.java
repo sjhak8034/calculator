@@ -1,8 +1,8 @@
-package challengeCalculator.CalculatorForWeek3Hw;
+package challengeCalculator;
 
 import java.math.BigDecimal;
 
-public class getInput <t extends Number> {
+public class GetInput<t extends Number> {
 
     public Number get (String input) {
         try {
