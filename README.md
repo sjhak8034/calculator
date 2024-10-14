@@ -1,1 +1,2 @@
-calculator제작
+calculator제작 
+기능설명
