@@ -1,4 +1,4 @@
-package challengeCalculator.CalculatorForWeek3Hw;
+package challengeCalculator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +19,7 @@ public class Calculator <t extends Number, u extends Number> {
 
 
      public List<Double> getter() {
+
         return this.memory;
     }
 
@@ -31,7 +32,7 @@ public class Calculator <t extends Number, u extends Number> {
         result = operation.operate(a, b);
 
         memory.add(result);
-        System.out.println(memory.toString());
+
         return result;
     }
 

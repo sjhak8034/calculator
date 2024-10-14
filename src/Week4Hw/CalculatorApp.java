@@ -13,7 +13,6 @@ public class CalculatorApp {
         parser.parseFirstNum(firstInput);
 
 
-
         System.out.println("연산자를 입력해주세요!");
         String operator = sc.nextLine();
         parser.parseOperator(operator);
@@ -24,7 +23,6 @@ public class CalculatorApp {
 
         System.out.println("연산 결과 : " + parser.executeCalculator());
         return true;
-
 
 
     }

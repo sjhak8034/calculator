@@ -1,4 +1,4 @@
-package challengeCalculator;
+package CalculatorWithNewFunction;
 
 public abstract class AbstractOperation <t extends Number, u extends Number> extends Calculator {
 

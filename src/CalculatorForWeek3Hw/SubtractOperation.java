@@ -1,10 +1,12 @@
-package challengeCalculator.CalculatorForWeek3Hw;
+package CalculatorForWeek3Hw;
 
-public class SubtractOperation<t extends Number, u extends Number> extends AbstractOperation<t,u> {
+import CalculatorForWeek3Hw.AbstractOperation;
+
+public class SubtractOperation extends AbstractOperation {
     @Override
-    public double operate(t a, u b) {
+    public double operate(int a, int b) {
 
-        return a.doubleValue() - b.doubleValue();
+        return a - b;
 
     }
 }

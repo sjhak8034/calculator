@@ -12,6 +12,7 @@ public class Calculator {
     public void setOperation(AbstractOperation operation) {
         this.operation = operation;
     }
+
     public void setFirstNumber(int firstNumber) {
         this.firstNumber = firstNumber;
     }
@@ -19,10 +20,10 @@ public class Calculator {
     public void setSecondNumber(int secondNumber) {
         this.secondNumber = secondNumber;
     }
+
     public Calculator() {
 
     }
-
 
 
     public double calculate() {

@@ -1,4 +1,4 @@
-package challengeCalculator;
+package CalculatorWithNewFunction;
 
 import java.util.ArrayList;
 import java.util.List;

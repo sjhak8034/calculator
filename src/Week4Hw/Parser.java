@@ -9,8 +9,8 @@ public class Parser {
 
     private final Calculator calculator = new Calculator();
 
-    public Parser parseFirstNum(String firstInput)throws BadInputException{
-       boolean check = !Pattern.matches(NUMBER_REG, firstInput);
+    public Parser parseFirstNum(String firstInput) throws BadInputException {
+        boolean check = !Pattern.matches(NUMBER_REG, firstInput);
         if (check) {
             throw new BadInputException("정수");
         }
@@ -21,7 +21,7 @@ public class Parser {
     public Parser parseSecondNum(String secondInput) throws BadInputException {
 
         boolean check = !Pattern.matches(NUMBER_REG, secondInput);
-        if (check){
+        if (check) {
             throw new BadInputException("정수");
         }
         calculator.setSecondNumber(Integer.parseInt(secondInput));
@@ -30,7 +30,7 @@ public class Parser {
 
     public Parser parseOperator(String operationInput) throws BadInputException {
         boolean check = !Pattern.matches(OPERATION_REG, operationInput);
-        if (check){
+        if (check) {
             throw new BadInputException("연산자");
         }
         switch (operationInput) {
