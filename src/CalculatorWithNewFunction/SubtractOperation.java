@@ -1,6 +1,6 @@
 package CalculatorWithNewFunction;
 
-public class SubtractOperation<t extends Number, u extends Number> extends AbstractOperation<t,u> {
+public class SubtractOperation<t extends Number, u extends Number> extends AbstractOperation<t, u> {
     @Override
     public double operate(t a, u b) {
 
