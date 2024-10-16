@@ -26,7 +26,7 @@ public class ArithmeticCalculator <t extends Number, u extends Number>  {
         return this.memory.toString();
     }
     public void setter(int num,double value) throws BadRangeInputException {
-        if (num>this.memory.size()){
+        if (num>this.memory.size()-1){
             throw new BadRangeInputException("0~"+(memory.size()-1));
         }
         this.memory.set(num,value);
