@@ -1,5 +1,6 @@
 package CalculatorWithNewFunction;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -7,10 +8,7 @@ public class Main {
         boolean calculateEnded = false;
         String mode;
         Scanner sc = new Scanner(System.in);
-
         while (!calculateEnded) {
-
-
             try {
                 calculateEnded = !CalculatorApp.start();
             } catch (BadInputException e) {
@@ -23,7 +21,7 @@ public class Main {
                     if (mode.equals("cal")) {
                         break;
                     } else if (mode.equals("check")) {
-                        CalculatorApp.checkMemory();
+                        System.out.println(ArithmeticCalculator.getter());
                     } else if (mode.equals("modify")) {
                         try {
                             CalculatorApp.modifyMemory();
@@ -34,6 +32,7 @@ public class Main {
                         calculateEnded = true;
                         break;
                     }
+
                 }
 
 

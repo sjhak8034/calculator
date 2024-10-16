@@ -1,5 +1,6 @@
 package CalculatorWithNewFunction;
 
+import java.util.ArrayList;
 import java.util.regex.Pattern;
 
 public class Parser {
@@ -63,7 +64,7 @@ public class Parser {
     public double executeCalculator() {
         return calculator.calculate();
     }
-    public String checkMemory(){return calculator.getter();}
+
     public void modifyMemory(String num,String value)throws BadInputException{
         boolean checkIndex = !Pattern.matches(NUMBER_REG, num);
         boolean checkValue = !Pattern.matches(NUMBER_REG, value);

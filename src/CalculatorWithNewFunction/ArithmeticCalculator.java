@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class ArithmeticCalculator <t extends Number, u extends Number>  {
     private t firstNumber;
     private u secondNumber;
-    private ArrayList<Double>memory = new ArrayList<>();
+    private static ArrayList<Double>memory = new ArrayList<>();
 
     private AbstractOperation operation;
 
@@ -22,20 +22,22 @@ public class ArithmeticCalculator <t extends Number, u extends Number>  {
     public ArithmeticCalculator() {
 
     }
-    public String getter(){
-        return this.memory.toString();
+    public static ArrayList<Double> getter(){
+
+        return memory;
     }
-    public void setter(int num,double value) throws BadRangeInputException {
-        if (num>this.memory.size()-1){
+    public static void setter(int num,double value) throws BadRangeInputException {
+        if (num>memory.size()-1){
             throw new BadRangeInputException("0~"+(memory.size()-1));
         }
-        this.memory.set(num,value);
+        memory.set(num,value);
     }
 
     public double calculate() {
         double answer = 0;
         answer = operation.operate(this.firstNumber, this.secondNumber);
-        this.memory.add(answer);
+        memory.add(answer);
+        ArrayList<Double> upperCase = new ArrayList<>();
 
         return answer;
     }
