@@ -36,6 +36,7 @@ public class ArithmeticCalculator <t extends Number, u extends Number>  {
         double answer = 0;
         answer = operation.operate(this.firstNumber, this.secondNumber);
         this.memory.add(answer);
+
         return answer;
     }
 
