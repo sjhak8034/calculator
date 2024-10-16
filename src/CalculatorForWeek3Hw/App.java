@@ -1,10 +1,17 @@
 package CalculatorForWeek3Hw;
 
+import com.sun.org.apache.xerces.internal.impl.io.ASCIIReader;
+import com.sun.xml.internal.ws.util.ASCIIUtility;
+
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class App {
     public static void main(String[] args) {
         /* Calculator 인스턴스 생성 */
+
+
         Calculator calc = new Calculator();
         Scanner sc = new Scanner(System.in);
         double result;
