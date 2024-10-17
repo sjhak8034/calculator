@@ -1,4 +1,4 @@
-package CalculatorWithClass;
+package LV2;
 
 import java.util.Scanner;
 

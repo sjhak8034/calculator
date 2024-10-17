@@ -1,4 +1,4 @@
-package CalculatorWithNewFunction;
+package LV3;
 
 public class MultiplyOperation <t extends Number, u extends Number> extends AbstractOperation <t,u> {
     @Override

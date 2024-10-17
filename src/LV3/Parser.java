@@ -1,6 +1,5 @@
-package CalculatorWithNewFunction;
+package LV3;
 
-import java.util.ArrayList;
 import java.util.regex.Pattern;
 
 public class Parser {

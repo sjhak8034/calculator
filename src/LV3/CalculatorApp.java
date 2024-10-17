@@ -1,4 +1,4 @@
-package CalculatorWithNewFunction;
+package LV3;
 
 import java.util.ArrayList;
 import java.util.Scanner;
